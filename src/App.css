@@ -1,0 +1,51 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App .header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.App .content {
+  flex: 1;
+  flex-grow: 10;
+  display: flex;
+  flex-direction: row;
+}
+
+.App .content .note-list {
+  flex: 1;
+  padding: 5px;
+  border-right: 1px solid black;
+}
+
+.App .content .note-list .note-item {
+  background-color: red,
+}
+
+.App .content .note-body {
+  flex: 1;
+  flex-grow: 6;
+}
+
+.App .content .note-body .note-body-text {
+  height: 100%;
+  width: 100%;
+}
